@@ -102,9 +102,9 @@ public class GameController {
         if (AppSettings.canAccessFunctions(AppSettings.Story.S3M3)) {
             return player.getItem(itemName);
         }
-        if (itemName.equalsIgnoreCase("key")) {
+        if ("key".equalsIgnoreCase(itemName)) {
             return player.getKey();
-        } else if (itemName.equalsIgnoreCase("shovel")) {
+        } else if ("shovel".equalsIgnoreCase(itemName)) {
             return player.getShovel();
         }
         return null;

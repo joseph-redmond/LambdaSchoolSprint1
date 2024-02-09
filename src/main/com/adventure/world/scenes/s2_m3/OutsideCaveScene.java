@@ -36,9 +36,9 @@ public class OutsideCaveScene implements Scene {
 
     @Override
     public Tangible getItem(String itemName) {
-        if (itemName.equalsIgnoreCase("door")) {
+        if ("door".equalsIgnoreCase(itemName)) {
             return door;
-        } else if (itemName.equalsIgnoreCase("key")) {
+        } else if ("key".equalsIgnoreCase(itemName)) {
             return key;
         }
         return null;

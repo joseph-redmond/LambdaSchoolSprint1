@@ -30,7 +30,7 @@ public class HouseScene implements Scene {
 
     @Override
     public Tangible getItem(String itemName) {
-        if (itemName.equalsIgnoreCase("key")) {
+        if ("key".equalsIgnoreCase(itemName)) {
             return key;
         }
         return null;

@@ -31,7 +31,7 @@ public class HouseOutsideScene implements Scene {
 
     @Override
     public Tangible getItem(String itemName) {
-        if (itemName.equalsIgnoreCase("door")) {
+        if ("door".equalsIgnoreCase(itemName)) {
             return door;
         }
         return null;
